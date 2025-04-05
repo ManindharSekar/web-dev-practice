@@ -1,4 +1,30 @@
 <html>
 
+<body>
+    <script language="javascript">
+        document.writeln("<font size='10'>");
+        document.writeln("Welcome to My Country!<br>");
+        document.writeln("Welcome to my home!<br>");
+        document.writeln("Last updated ate is:" + document.lastModified);
+        document.bgColor = "lightblue";
+        document.fgColor = "blue";
+
+        function getElements() {
+            var x = document.getElementById("usr");
+            alert(x.value);
+            var y = document.getElementsByName("cat");
+            alert(y[0].value);
+            alert(y[1].value);
+        }
+
+    </script>
+
+    <form>
+        Username:<input type="text" id="usr" value="Manindhar"><br>
+        Student:<input type="radio" name="cat" value="S"><br>
+        Employee:<input type="radio" name="cat" value="E">
+        <input type="button" value="click" onclick="getElements()">
+    </form>
+</body>
 
 </html>
